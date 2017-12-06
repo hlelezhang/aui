@@ -116,6 +116,7 @@
 	// 设置当前分页
 	auiSlide.prototype.setPaginationActive = function(index){
 		var self = this;
+		this.index = index;
 		if(self.options.currentPage){
 			self.options.currentPage(index);
 		}
